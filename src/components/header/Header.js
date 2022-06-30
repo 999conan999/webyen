@@ -21,7 +21,7 @@ export default class Header extends Component {
                       <p className="zxs">
                         {/* {get_icon("volume","#f1d800")} */}
                         Chào mừng bạn đến với nội thất An Bình
-                        <a href="https://nestart.vn/qua-tet-yen-sao-2021/" className="text-bold">Xem ngay</a> 
+                        <a href="#" className="text-bold">Xem ngay</a> 
                       </p>
 
                     </div>
@@ -79,7 +79,7 @@ export default class Header extends Component {
               </div>
               <div className='colorz header-bottom colorz'>
                 <div className='container wr-menu '>
-                  <div className={menu_mb?'set-menu':'set-menu menu-mb'}>
+                  <div id="set-menu" className={menu_mb?'set-menu':'set-menu menu-mb'}>
                       <div className='menu'>
                         <ul>
                           <li>
@@ -118,12 +118,11 @@ export default class Header extends Component {
                          
                         </ul>
                       </div>
-                      <div className='dimmer'  onClick={()=>this.setState({menu_mb:!menu_mb})}><span>x</span></div>
+                      <div className='dimmer' id='dimmer' onClick={()=>this.setState({menu_mb:!menu_mb})}><span>x</span></div>
                   </div>
                 </div>
               </div>
           </header>
-          <div style={{height:"1000px"}}></div>
       </React.Fragment>
     );
   }
