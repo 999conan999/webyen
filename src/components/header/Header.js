@@ -5,9 +5,11 @@ export default class Header extends Component {
   constructor (props) {
     super(props)
     this.state = {
+      menu_mb:false
     }
   }
   render() {
+    let {menu_mb}=this.state;
     return (
       <React.Fragment>
           <header id="header" className="header header-wrapper" >
@@ -40,13 +42,16 @@ export default class Header extends Component {
               </div>
               <div className='header-main' style={{backgroundImage:"url(http://quatet.langsonweb.com/wp-content/uploads/2020/12/bg-header.jpg)"}}>
               {/* <div className='header-main' style={{backgroundImage:"url(https://yensaominhquang.com/styles/website/images/bg-header.jpg)"}}> */}
-                <div className='icon-menu' onClick={()=>alert('icon-menu')}>
+                <div className='icon-menu' onClick={()=>this.setState({menu_mb:!menu_mb})}>
                   {get_icon("menu","rgb(249 211 211)","32px",{marginRight:"5px",marginBottom:"5px"})}
                 </div>
-                <div className='icon-cart'  onClick={()=>alert('cart')}>
-                  <div className='wrap-icon-cart'>
-                    {get_icon("cart","#ffd41b","32px",{marginRight:"5px",marginBottom:"5px"})}<span className='gh'>Giỏ hàng</span><span className='nuvbe'>(0)</span>
-                  </div>
+
+                <div className='icon-cart'>
+                  <a href='#' style={{textDecoration:"none"}}>
+                    <div className='wrap-icon-cart'>
+                      {get_icon("cart","#ffd41b","32px",{marginRight:"5px",marginBottom:"5px"})}<span className='gh'>Giỏ hàng</span><span className='nuvbe'>(0)</span>
+                    </div>
+                  </a>
                 </div>
                 <div className='container setz'>
                   <div className='row'>
@@ -72,19 +77,24 @@ export default class Header extends Component {
                   </div>
                 </div>
               </div>
-              <div className='colorz header-bottom'>
-                <div className='container wr-menu'>
-                  <div className='set-menu'>
+              <div className='colorz header-bottom colorz'>
+                <div className='container wr-menu '>
+                  <div className={menu_mb?'set-menu':'set-menu menu-mb'}>
                       <div className='menu'>
                         <ul>
                           <li>
                             <a onClick={()=>console.log("a")}>Trang chủ</a>
                           </li>
                           <li>
-                            <a>Tài khoản</a>
+                            <a>Tài khoản
+                              <span className='newz'>
+                                {get_icon("new","white","39px",{marginLeft:"12px",marginBottom:"4px"})}
+                              </span>
+                            </a>
                           </li>
                           <li>
-                              <a>Về Nest ART</a>
+                              <a>Về Nest ART 
+                              </a>
                               <ul>
                                 <li><a>Web cuồi</a></li>
                               </ul>
@@ -95,15 +105,20 @@ export default class Header extends Component {
                           <li>
                             <a>Danh mục sản phẩm</a>
                             <ul>
-                              <li><a>Danh mục 1</a></li>
+                              <li><a>Danh mục 1 toi muốn nó dài thêm 
+                              <span className='newz'>
+                                {get_icon("gift","white","20px",{marginLeft:"12px",marginBottom:"4px"})}
+                              </span>
+                              </a></li>
                               <li><a>Danh mục 2</a></li>
                               <li><a>Danh mục 3</a></li>
-                              <li><a>Danh mục 4</a></li>
+                              <li><a>Danh mục 4 ngắn hơn</a></li>
                             </ul>
                           </li>
+                         
                         </ul>
                       </div>
-                      <div className='dimmer'  onClick={()=>console.log("dimmer")}><span>x</span></div>
+                      <div className='dimmer'  onClick={()=>this.setState({menu_mb:!menu_mb})}><span>x</span></div>
                   </div>
                 </div>
               </div>

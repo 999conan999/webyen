@@ -18,5 +18,31 @@ export function get_icon(type,color="white",size=16,style={marginRight:"5px",mar
         case "search":
             return <svg fill={color} width={size} height={size} style={style} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg>
         break;
+        case "new":
+            return <svg fill={color} width={size} height={size} style={style} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.123 40.019">
+            <g id="Group_3544" data-name="Group 3544" transform="translate(-1134.877 -187.481)">
+              <g id="Group_3543" data-name="Group 3543" transform="translate(1134.877 187.481)">
+                <path id="Path_2980" data-name="Path 2980" d="M1183.638,220.552l-48.76.48,2.4-18.192,45.522-7.269Z" transform="translate(-1134.877 -187.481)" fill="#ffb600"/>
+                <path id="Path_2981" data-name="Path 2981" d="M1140.337,202.351l-3.063.489-2.4,18.192,48.761-.48-.121-3.6C1171.217,219.593,1153.007,216.534,1140.337,202.351Z" transform="translate(-1134.877 -187.481)" opacity="0.2"/>
+                <g id="Group_3540" data-name="Group 3540" transform="translate(0.237 12.371)">
+                  <path id="Path_2982" data-name="Path 2982" d="M1135.258,207.225l-.019,0a.143.143,0,0,1-.124-.161l.721-5.465a.143.143,0,0,1,.119-.123l10.089-1.621a.143.143,0,0,1,.165.119.145.145,0,0,1-.119.165l-9.983,1.6-.707,5.359A.143.143,0,0,1,1135.258,207.225Z" transform="translate(-1135.114 -199.852)" fill="#ffbc00"/>
+                </g>
+                <g id="Group_3541" data-name="Group 3541" transform="translate(48.028)">
+                  <path id="Path_2983" data-name="Path 2983" d="M1194,194.836l-10.108,2.435,7.841-4.108Z" transform="translate(-1182.905 -187.481)" fill="#ffbc00"/>
+                  <path id="Path_2984" data-name="Path 2984" d="M1185.847,194.2l6.7-5.168-1.672-.583Z" transform="translate(-1182.905 -187.481)" fill="#ffbc00"/>
+                  <path id="Path_2985" data-name="Path 2985" d="M1185.561,187.481l-2.656,7.239,4.134-6.062Z" transform="translate(-1182.905 -187.481)" fill="#ffbc00"/>
+                </g>
+                <g id="Group_3542" data-name="Group 3542" transform="translate(36.407 13.071)">
+                  <path id="Path_2986" data-name="Path 2986" d="M1171.427,222.417a.144.144,0,0,1,0-.288l13.745-.2-.8-21.23a.143.143,0,0,1,.138-.149.148.148,0,0,1,.149.138l.8,21.378a.14.14,0,0,1-.039.1.147.147,0,0,1-.1.045l-13.892.2Z" transform="translate(-1171.284 -200.551)" fill="#ffbc00"/>
+                </g>
+                <path id="Path_2987" data-name="Path 2987" d="M1167.675,197.986l14.169-1.383,1.571,17.311-.617-18.343Z" transform="translate(-1134.877 -187.481)" fill="#cc1d1d"/>
+              </g>
+              <text id="NEW" transform="translate(1146 202.5)" fill="#a81411" fontSize="14" fontFamily="SegoeUI, Segoe UI"><tspan x="0" y="15">NEW</tspan></text>
+            </g>
+          </svg>
+        break;
+        case "gift":
+            return <svg fill={color} width={size} height={size} style={style}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M152 0H154.2C186.1 0 215.7 16.91 231.9 44.45L256 85.46L280.1 44.45C296.3 16.91 325.9 0 357.8 0H360C408.6 0 448 39.4 448 88C448 102.4 444.5 115.1 438.4 128H480C497.7 128 512 142.3 512 160V224C512 241.7 497.7 256 480 256H32C14.33 256 0 241.7 0 224V160C0 142.3 14.33 128 32 128H73.6C67.46 115.1 64 102.4 64 88C64 39.4 103.4 0 152 0zM190.5 68.78C182.9 55.91 169.1 48 154.2 48H152C129.9 48 112 65.91 112 88C112 110.1 129.9 128 152 128H225.3L190.5 68.78zM360 48H357.8C342.9 48 329.1 55.91 321.5 68.78L286.7 128H360C382.1 128 400 110.1 400 88C400 65.91 382.1 48 360 48V48zM32 288H224V512H80C53.49 512 32 490.5 32 464V288zM288 512V288H480V464C480 490.5 458.5 512 432 512H288z"/></svg>
+        break;
     }
 }
