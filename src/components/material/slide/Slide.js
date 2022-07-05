@@ -7,36 +7,36 @@ const slider_data={
   list_img:[
     {
       img_url:"https://anbinhnew.com/wp-content/uploads/2021/01/giuong-sat-gia-go-1m2-300x300.jpg",
-      html:'<div style=" top: 0px; left: 0px; "><p><strong>Mô tả đây:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
     },
     {
       img_url:"https://nestart.vn/wp-content/uploads/2020/08/doi-tac-2.png",
-      html:"<p>Ở đây có thẻ P bao bọc nè, giá rẻ miễn phí đổi trả</p>"
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
     },
     {
       img_url:"https://nestart.vn/wp-content/uploads/2020/08/doi-tac-3.png",
-      html:"<p><strong>Mô tả here strong</strong></p><p>Mô tả với có từ strong hêre</p>"
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
     },
     {
       img_url:"https://nestart.vn/wp-content/uploads/2020/08/doi-tac-4.png",
-      html:"<p><strong>Mô tả here ul</strong></p><p><ul><li>Đây là số 1 thì không có gì là số 2</li><li>Đây là số 2 thì không có gì làsố 3</li><li>Đây là số 3 thì không có gì là số 4</li></ul></p>"
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
     },
     {
       img_url:"https://nestart.vn/wp-content/uploads/2020/08/doi-tac-6.jpg",
-      html:"thông điệp 5 ở đây nè bà con ơi"
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
     },
     {
       img_url:"https://nestart.vn/wp-content/uploads/2020/08/doi-tac-9.png",
-      html:"thông điệp 6 ở đây nè bà con ơi"
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
     },
-    {
-      img_url:"https://anbinhnew.com/wp-content/uploads/2021/01/giuong-sat-nam-tinh-mau-den-An-Binh-300x300.jpg",
-      html:"thông điệp 7 ở đây nè bà con ơi"
-    },
-    {
-      img_url:"https://anbinhnew.com/wp-content/uploads/2021/01/giuong-sat-1m8x2m-trang-den-300x300.jpg",
-      html:"thông điệp 8 ở đây nè bà con ơi"
-    },
+    // {
+    //   img_url:"https://anbinhnew.com/wp-content/uploads/2021/01/giuong-sat-nam-tinh-mau-den-An-Binh-300x300.jpg",
+    //   html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
+    // },
+    // {
+    //   img_url:"https://anbinhnew.com/wp-content/uploads/2021/01/giuong-sat-1m8x2m-trang-den-300x300.jpg",
+    //   html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
+    // },
 
   ],
   title:"Thông điệp"
@@ -45,7 +45,7 @@ export default class Slide extends Component {
   constructor (props) {
     super(props)
     this.state = {
-        type:"banner-full-width",// banner-full-width,banner-midle-width, text-slide , product,  ,....v.v.
+        type:"banner-slide-1",// banner-slide-1,banner-slide-2, text-slide , product,  ,....v.v.
         nav1: null,
         nav2: null
     }
@@ -56,8 +56,9 @@ export default class Slide extends Component {
       nav2: this.slider2
     })
     try{
-     this.widthz=this.container.offsetWidth
-    }catch(e){}
+      if(this.container!=undefined)  this.widthz=this.container.offsetWidth
+      if(this.container2!=undefined) this.heightz=this.container2.offsetWidth/3.5
+    }catch(e){console.log("zz")}
   }
   show_img_large_product=(items)=>{
     if(items!=undefined){
@@ -108,7 +109,7 @@ export default class Slide extends Component {
       items.forEach((e,i) => {
         //
         rs.push(
-          <div className='handle'  key={i}>
+          <div className='handle' key={i}>
             <a>
               {/* <img src={e.img_url} width={'100%'}/> */}
               <LazyImage
@@ -130,7 +131,7 @@ export default class Slide extends Component {
       items.forEach((e,i) => {
         //
         rs.push(
-          <div className='handle'  key={i}>
+          <div className='handle' key={i}>
             <a>
               <LazyImage
                 srcset={e.img_url}
@@ -202,7 +203,7 @@ export default class Slide extends Component {
           </Slider>
           </div>
       </div>)
-    }else if(type==="banner-full-width"){
+    }else if(type==="banner-slide-1"){
       const settings_slide_full_width={
         lazyLoad: false,
         autoplay: true,
@@ -211,7 +212,7 @@ export default class Slide extends Component {
         fade: true,
       }
       return  (
-        <div className='slider-z'>
+        <div className='slider-z'  ref={el => (this.container2 = el)} style={{height:this.heightz}}>
           {slider_data.title!=""&&<div className='wraptt'><span className='title3z'>{slider_data.title}</span></div>}
           <Slider
               arrows={false}
@@ -222,7 +223,7 @@ export default class Slide extends Component {
               {this.show_img_slide_full_width(img_list)}
           </Slider>
         </div>)
-    }else if(type==="banner-midle-width"){
+    }else if(type==="banner-slide-2"){
       const settings_slide_midle_width={
         lazyLoad: false,
         autoplay: true,
@@ -230,7 +231,7 @@ export default class Slide extends Component {
         autoplaySpeed: 5000,
       }
       return  (
-        <div className='slider-z container'>
+        <div className='slider-z'  ref={el => (this.container2 = el)} style={{height:this.heightz}}>
           {slider_data.title!=""&&<div className='wraptt'><span className='title3z'>{slider_data.title}</span></div>}
           <Slider
               arrows={false}
@@ -247,7 +248,7 @@ export default class Slide extends Component {
         autoplay: true,
         speed: 1000,
         autoplaySpeed: 5000,
-        slidesToShow: img_list.length>=4?4:img_list.length,
+        slidesToShow: img_list.length>=5?5:img_list.length,
         slidesToScroll: 1,
         centerMode: true,
         focusOnSelect: true,
@@ -273,7 +274,7 @@ export default class Slide extends Component {
         ]
       }
       return  (
-        <div className='slider-z container'>
+        <div className='slider-z'>
           {slider_data.title!=""&&<div className='wraptt'><span className='title3z'>{slider_data.title}</span></div>}
           <Slider
               arrows={false}
@@ -288,23 +289,31 @@ export default class Slide extends Component {
   }
   render() {
     let data=slider_data//[todo]
-    let {type}=this.state;//[todo]
+    let {type}=this.props;//[todo]
     
     //
     let html='<div style=" position: absolute; top: 0px; left: 0px; "><a hre"#"><div class="frame"><button class="custom-btn btn-11">Read More</button></div></a></div>'
-    if(type==="banner-full-width" ||type==="banner-midle-width") data={title:"",list_img:[  
+    if(type==="banner-slide-1" ||type==="banner-slide-2") data={title:"",list_img:[  
+    {
+      img_url:"http://quatet.langsonweb.com/wp-content/uploads/2020/12/slider_1a.jpg",
+      html:html
+    },
+    {
+      img_url:"http://quatet.langsonweb.com/wp-content/uploads/2020/12/slider_1a.jpg",
+      html:html
+    },
+    {
+      img_url:"http://quatet.langsonweb.com/wp-content/uploads/2020/12/slider_1a.jpg",
+      html:html
+    },
     // {
-    //   img_url:"http://quatet.langsonweb.com/wp-content/uploads/2020/12/slider_1a.jpg",
+    //   img_url:"https://nestart.vn/wp-content/uploads/2020/09/59-tac-dung-to-yen-an-lien.jpg",
     //   html:html
     // },
-    {
-      img_url:"https://nestart.vn/wp-content/uploads/2020/09/59-tac-dung-to-yen-an-lien.jpg",
-      html:html
-    },
-    {
-      img_url:"https://nestart.vn/wp-content/uploads/2021/03/78-mat-na-yen-vang-nest-art.jpg",
-      html:html
-    },
+    // {
+    //   img_url:"https://nestart.vn/wp-content/uploads/2021/03/78-mat-na-yen-vang-nest-art.jpg",
+    //   html:html
+    // },
     ]}
     
     return (

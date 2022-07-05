@@ -1,0 +1,18 @@
+.wrap-gt1{
+    font-size: 23px;
+    color: #a81411;
+    text-align: center;
+}
+.wrap-gt1 h1{
+    font-size: 23px !important;
+}
+.wrap-gt1 blockquote{
+    font-size: 16px;
+    text-align: justify;
+}
+.mgb-8{
+    margin-bottom: 8px;
+}
+@media (max-width: 767px){
+    
+}
