@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './Home_body.css'
 import Slide from '../material/slide/Slide';
 import Home_gt1 from '../material/content_Home/Home_gt1';
+import Cart_sp from '../material/content_Home/cart_sp';
+import News from '../material/content_Home/news';
+import {get_icon} from "../../lib/fs"
 export default class Home_body extends Component {
   constructor (props) {
     super(props)
@@ -10,15 +13,32 @@ export default class Home_body extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <main className='mainz'>
         <Slide type="banner-slide-1"/>
         <Home_gt1/>
         <div className='container gt1 wrapcontentHome'>
-          <h2>Các sản phẩm của chúng tôi</h2>
-          <Slide type="text-slide"/>
-          
+            <h2 className='headhome'><span></span> <b style={{margin:"0px 20px"}}>{get_icon("1star","white","30px")} Các sản phẩm của chúng tôi {get_icon("1star","white","30px")}</b> <span></span></h2>
+          <div>
+            <div className='lis-category'>
+              <div className='wraptt'>
+                <span className='title3z'>Tổ yến dinh dưỡng</span>
+              </div>
+              <div  className='wza'>
+                <Slide type="text-slide"/>
+                <Cart_sp/>
+                <div class="frame">
+                  <button class="custom-btn btn-5">Read More</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+           <h2 className='headhome'><span></span> <b style={{margin:"0px 20px"}}>{get_icon("1star","white","30px")} Kiến thức có thể bạn quang tâm {get_icon("1star","white","30px")}</b> <span></span></h2>
+           <div className='lis-news row'>
+              <News/>
+            </div>
         </div>
-      </React.Fragment>
+      </main>
     );
   }
 }

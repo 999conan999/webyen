@@ -3,31 +3,30 @@ import Slider from "react-slick";
 import './slide.css'
 import LazyImage from './../../../lib/lazy-image'
 import hoder from './placeHolder.jpg'
-const slider_data={
-  list_img:[
+const slider_data=[
     {
       img_url:"https://anbinhnew.com/wp-content/uploads/2021/01/giuong-sat-gia-go-1m2-300x300.jpg",
-      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p></div>'
     },
     {
       img_url:"https://nestart.vn/wp-content/uploads/2020/08/doi-tac-2.png",
-      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p></div>'
     },
     {
       img_url:"https://nestart.vn/wp-content/uploads/2020/08/doi-tac-3.png",
-      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p></div>'
     },
     {
       img_url:"https://nestart.vn/wp-content/uploads/2020/08/doi-tac-4.png",
-      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p></div>'
     },
     {
       img_url:"https://nestart.vn/wp-content/uploads/2020/08/doi-tac-6.jpg",
-      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p></div>'
     },
     {
       img_url:"https://nestart.vn/wp-content/uploads/2020/08/doi-tac-9.png",
-      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
+      html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p></div>'
     },
     // {
     //   img_url:"https://anbinhnew.com/wp-content/uploads/2021/01/giuong-sat-nam-tinh-mau-den-An-Binh-300x300.jpg",
@@ -38,9 +37,7 @@ const slider_data={
     //   html:'<div style=" top: 0px; left: 0px; "><p><strong>Hỗ trợ giảm giá nếu khách hàng mua yến thô:</strong></p><a hre"#"><div class="frame"><button class="custom-btn btn-5">Read More</button></div></a></div>'
     // },
 
-  ],
-  title:"Thông điệp"
-}
+  ]
 export default class Slide extends Component {
   constructor (props) {
     super(props)
@@ -166,8 +163,8 @@ export default class Slide extends Component {
     }
   }
 
-  set_up_slide=(slider_data,type)=>{
-    let img_list=slider_data.list_img;
+  set_up_slide=(list_img,type)=>{
+    let img_list=list_img;
     if(type==="product") {
       let slidesToShow=5;
       if(img_list!=undefined){
@@ -213,7 +210,7 @@ export default class Slide extends Component {
       }
       return  (
         <div className='slider-z'  ref={el => (this.container2 = el)} style={{height:this.heightz}}>
-          {slider_data.title!=""&&<div className='wraptt'><span className='title3z'>{slider_data.title}</span></div>}
+          {/* {slider_data.title!=""&&<div className='wraptt'><span className='title3z'>{slider_data.title}</span></div>} */}
           <Slider
               arrows={false}
               infinite={true}
@@ -232,7 +229,7 @@ export default class Slide extends Component {
       }
       return  (
         <div className='slider-z'  ref={el => (this.container2 = el)} style={{height:this.heightz}}>
-          {slider_data.title!=""&&<div className='wraptt'><span className='title3z'>{slider_data.title}</span></div>}
+          {/* {slider_data.title!=""&&<div className='wraptt'><span className='title3z'>{slider_data.title}</span></div>} */}
           <Slider
               arrows={false}
               infinite={true}
@@ -275,7 +272,7 @@ export default class Slide extends Component {
       }
       return  (
         <div className='slider-z'>
-          {slider_data.title!=""&&<div className='wraptt'><span className='title3z'>{slider_data.title}</span></div>}
+          {/* {slider_data.title!=""&&<div className='wraptt'><span className='title3z'>{slider_data.title}</span></div>} */}
           <Slider
               arrows={false}
               infinite={true}
@@ -293,7 +290,7 @@ export default class Slide extends Component {
     
     //
     let html='<div style=" position: absolute; top: 0px; left: 0px; "><a hre"#"><div class="frame"><button class="custom-btn btn-11">Read More</button></div></a></div>'
-    if(type==="banner-slide-1" ||type==="banner-slide-2") data={title:"",list_img:[  
+    if(type==="banner-slide-1" ||type==="banner-slide-2") data=[  
     {
       img_url:"http://quatet.langsonweb.com/wp-content/uploads/2020/12/slider_1a.jpg",
       html:html
@@ -314,7 +311,7 @@ export default class Slide extends Component {
     //   img_url:"https://nestart.vn/wp-content/uploads/2021/03/78-mat-na-yen-vang-nest-art.jpg",
     //   html:html
     // },
-    ]}
+    ]
     
     return (
       <React.Fragment>

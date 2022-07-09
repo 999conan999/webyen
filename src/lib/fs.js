@@ -151,5 +151,69 @@ export function get_icon(type,color="white",size=16,style={marginRight:"5px",mar
             </g>
           </svg>
         break;
+        case "1star":
+            return <svg fill={color} width={size} height={size} style={style}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.072 40.014">
+            <g id="Group_3698" data-name="Group 3698" transform="translate(-736.062 -12958)">
+              <path id="Path_4888" data-name="Path 4888" d="M752.132,12977.688h-16.07l21.036,6.836Z" transform="translate(0 -4.404)" fill="#8e0909"/>
+              <path id="Path_4889" data-name="Path 4889" d="M763.16,12986.493Z" transform="translate(-6.062 -6.374)" fill="#ffdb31"/>
+              <path id="Path_4890" data-name="Path 4890" d="M763.16,12986.493h0l13,17.895-4.966-15.285Z" transform="translate(-6.062 -6.374)" fill="#bc1e1e"/>
+              <path id="Path_4891" data-name="Path 4891" d="M746.412,13004.388l13-9.447v-8.447Z" transform="translate(-2.315 -6.374)" fill="#bc1e1e"/>
+              <path id="Path_4892" data-name="Path 4892" d="M784.2,12977.688h-16.07l-4.966,6.836Z" transform="translate(-6.062 -4.404)" fill="#bc1e1e"/>
+              <path id="Path_4893" data-name="Path 4893" d="M763.16,12986.493Z" transform="translate(-6.062 -6.374)" fill="#ffdb31"/>
+              <path id="Path_4894" data-name="Path 4894" d="M763.16,12994.94l13,9.447-13-17.895Z" transform="translate(-6.062 -6.374)" fill="#930902"/>
+              <path id="Path_4895" data-name="Path 4895" d="M759.413,12986.493l-8.035,2.609-4.966,15.285,13-17.895Z" transform="translate(-2.315 -6.374)" fill="#bc1e1e"/>
+              <path id="Path_4896" data-name="Path 4896" d="M756.763,12973.283l4.966,6.836V12958Z" transform="translate(-4.631)" fill="#bc1e1e"/>
+              <path id="Path_4897" data-name="Path 4897" d="M763.16,12958v22.119l4.966-6.836Z" transform="translate(-6.062)" fill="#8e0909"/>
+              <path id="Path_4898" data-name="Path 4898" d="M757.1,12984.523l-21.036-6.836,13,9.445,8.035-2.609Z" transform="translate(0 -4.404)" fill="#9b2400"/>
+              <path id="Path_4899" data-name="Path 4899" d="M763.16,12984.523l8.035,2.609,13-9.445-21.036,6.836Z" transform="translate(-6.062 -4.404)" fill="#930902"/>
+              <path id="Path_4900" data-name="Path 4900" d="M763.16,12986.493Z" transform="translate(-6.062 -6.374)" fill="#ffdb31"/>
+              <path id="Path_4901" data-name="Path 4901" d="M763.16,12986.493Z" transform="translate(-6.062 -6.374)" fill="#ffdb31"/>
+            </g>
+          </svg>
+        break;
     }
+}
+export function get_star(score=5,size=15){
+  let rs=[];
+  let q=<span className={'star-z'}><svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M329.6 176H488C498.3 176 507.4 182.5 510.7 192.2C514 201.9 510.8 212.6 502.7 218.9L371.9 320.7L422.9 480.7C426.1 490.7 422.4 501.7 413.7 507.7C405.1 513.7 393.6 513.4 385.3 506.9L256 406.4L126.7 506.9C118.4 513.4 106.9 513.7 98.27 507.7C89.65 501.7 85.94 490.7 89.13 480.7L140.1 320.7L9.267 218.9C1.174 212.6-2.027 201.9 1.3 192.2C4.628 182.5 13.75 176 24 176H182.5L233.1 16.72C236.3 6.764 245.6 0 256 0C266.5 0 275.7 6.764 278.9 16.72L329.6 176z"/></svg></span>;
+  let w= <span className={'star-z'}>
+  <svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M329.6 176H488C498.3 176 507.4 182.5 510.7 192.2C514 201.9 510.8 212.6 502.7 218.9L371.9 320.7L422.9 480.7C426.1 490.7 422.4 501.7 413.7 507.7C405.1 513.7 393.6 513.4 385.3 506.9L256 406.4L126.7 506.9C118.4 513.4 106.9 513.7 98.27 507.7C89.65 501.7 85.94 490.7 89.13 480.7L140.1 320.7L9.267 218.9C1.174 212.6-2.027 201.9 1.3 192.2C4.628 182.5 13.75 176 24 176H182.5L233.1 16.72C236.3 6.764 245.6 0 256 0C266.5 0 275.7 6.764 278.9 16.72L329.6 176zM256 352C261.2 352 266.4 353.7 270.7 357.1L353.7 421.6L321.1 319.3C318.1 309.7 321.3 299.2 329.3 293.1L418.1 223.1H312C301.5 223.1 292.3 217.2 289.1 207.3L256 103.2L256 352z"/></svg></span>;
+  let e=<span className={'star-z'}><svg width={size} height={size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M230.3 18.77C233.9 7.592 244.3 0 256 0C267.7 0 278.1 7.592 281.7 18.77L331.7 176H485.4C500.1 176 512 187.9 512 202.6C512 211.1 507.9 219.1 500.1 224.1L370.6 318.3L421.4 485.2C425.5 498.6 415.5 512 401.6 512C397 512 392.5 510.5 388.9 507.6L256 404.3L123.1 507.6C119.5 510.5 114.1 512 110.4 512C96.46 512 86.5 498.6 90.55 485.2L141.4 318.3L11.02 224.1C4.1 219.1 0 211.1 0 202.6C0 187.9 11.9 176 26.59 176H180.3L230.3 18.77zM256 43.63L207.2 196.9C205.1 203.5 198.1 208 192 208H43.33L169.4 299C174.9 303 177.3 310.1 175.3 316.7L131.5 460.6L246.2 371.4C251.1 366.9 260 366.9 265.8 371.4L380.5 460.6L336.7 316.7C334.7 310.1 337.1 303 342.6 299L468.7 208H320C313 208 306.9 203.5 304.8 196.9L256 43.63z"/></svg></span>;
+  if(score==0){
+      rs.push(e);rs.push(e);rs.push(e);rs.push(e);rs.push(e);
+  }
+  if(score>0&&score<1){
+      rs.push(w);rs.push(e);rs.push(e);rs.push(e);rs.push(e);
+  }
+  if(score==1){
+      rs.push(q);rs.push(e);rs.push(e);rs.push(e);rs.push(e);
+  }
+  if(score>1&&score<2){
+      rs.push(q);rs.push(w);rs.push(e);rs.push(e);rs.push(e);
+  }
+  if(score==2){
+      rs.push(q);rs.push(q);rs.push(e);rs.push(e);rs.push(e);
+  }
+  if(score>2&&score<3){
+      rs.push(q);rs.push(q);rs.push(w);rs.push(e);rs.push(e);
+  }
+  if(score==3){
+      rs.push(q);rs.push(q);rs.push(q);rs.push(e);rs.push(e);
+  }
+  if(score>3&&score<4){
+      rs.push(q);rs.push(q);rs.push(q);rs.push(w);rs.push(e);
+  }
+  if(score==4){
+      rs.push(q);rs.push(q);rs.push(q);rs.push(q);rs.push(e);
+  }
+  if(score>4&&score<5){
+      rs.push(q);rs.push(q);rs.push(q);rs.push(q);rs.push(w);
+  }
+  if(score==5){
+      rs.push(q);rs.push(q);rs.push(q);rs.push(q);rs.push(q);
+  }
+  if(score>5){
+      rs.push(q);rs.push(q);rs.push(q);rs.push(q);rs.push(q);
+  }
+  return rs;
 }
