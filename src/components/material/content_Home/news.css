@@ -40,8 +40,4 @@
 .news-item{
     display: inline-block;
 }
-/* @media (min-width: 768px){
-    .news-item{
-        width: 50%;
-    }
-} */
+

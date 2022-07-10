@@ -17,26 +17,43 @@ export default class Home_body extends Component {
         <Slide type="banner-slide-1"/>
         <Home_gt1/>
         <div className='container gt1 wrapcontentHome'>
-            <h2 className='headhome'><span></span> <b style={{margin:"0px 20px"}}>{get_icon("1star","white","30px")} Các sản phẩm của chúng tôi {get_icon("1star","white","30px")}</b> <span></span></h2>
           <div>
-            <div className='lis-category'>
-              <div className='wraptt'>
-                <span className='title3z'>Tổ yến dinh dưỡng</span>
-              </div>
-              <div  className='wza'>
-                <Slide type="text-slide"/>
-                <Cart_sp/>
-                <div class="frame">
-                  <button class="custom-btn btn-5">Read More</button>
+            <h2 className='headhome'><span></span> <b style={{margin:"0px 20px"}}>Sản phẩm nổi bật </b> <span></span></h2>
+            <div className='wrap-list'>
+              <div className='lis-category'>
+                <div className='wraptt'>
+                  <span className='title3z'>Tổ yến dinh dưỡng</span>
+                </div>
+                <div  className='wza'>
+                  <Slide type="text-slide"/>
+                  <Cart_sp/>
+                  <div class="frame">
+                    <button class="custom-btn btn-5">Read More</button>
+                  </div>
                 </div>
               </div>
             </div>
-
+            <div className='wrap-list'>
+              <div className='lis-category'>
+                <div className='wraptt'>
+                  <span className='title3z'>Mật ong rừng thiên nhiên</span>
+                </div>
+                <div  className='wza'>
+                  <Slide type="text-slide"/>
+                  <Cart_sp/>
+                  <div class="frame">
+                    <button class="custom-btn btn-5">Read More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-           <h2 className='headhome'><span></span> <b style={{margin:"0px 20px"}}>{get_icon("1star","white","30px")} Kiến thức có thể bạn quang tâm {get_icon("1star","white","30px")}</b> <span></span></h2>
-           <div className='lis-news row'>
+          <div>
+            <h2 className='headhome'><span></span> <b style={{margin:"0px 20px"}}>{get_icon("1star","white","30px")} Kiến thức thú vị {get_icon("1star","white","30px")}</b> <span></span></h2>
+            <div className='lis-news row'>
               <News/>
             </div>
+          </div>
         </div>
       </main>
     );

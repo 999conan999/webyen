@@ -14,7 +14,6 @@ export default class App extends Component {
       <React.Fragment>
            <Header/>
            <Home_body/>
-          <div style={{height:"500px"}}></div>
            <Footer/>
       </React.Fragment>
     );

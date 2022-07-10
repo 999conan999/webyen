@@ -244,7 +244,7 @@ export default class Slide extends Component {
         lazyLoad: false,
         autoplay: true,
         speed: 1000,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         slidesToShow: img_list.length>=5?5:img_list.length,
         slidesToScroll: 1,
         centerMode: true,

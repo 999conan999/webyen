@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import "./home_gt1.css"
 import {get_icon} from"./../../../lib/fs";
-import LazyImage from './../../../lib/lazy-image'
+import LazyImage from './../../../lib/lazy-image';
+import hoder from '../slide/placeHolder.jpg'
 export default class Home_gt1 extends Component {
   constructor (props) {
     super(props)
@@ -24,6 +25,7 @@ export default class Home_gt1 extends Component {
               {/* <img width="100%" src="http://quatet.langsonweb.com/wp-content/uploads/2020/12/banner_1.png" alt=""/> */}
               <LazyImage
                 srcset={"http://quatet.langsonweb.com/wp-content/uploads/2020/12/banner_1.png"}
+                src={hoder}
                 width="100%"
               />
             </div>
@@ -31,6 +33,7 @@ export default class Home_gt1 extends Component {
               {/* <img width="100%" src="http://quatet.langsonweb.com/wp-content/uploads/2020/12/banner_2.png" alt=""/> */}
               <LazyImage
                 srcset={"http://quatet.langsonweb.com/wp-content/uploads/2020/12/banner_2.png"}
+                src={hoder}
                 width="100%"
               />
             </div>

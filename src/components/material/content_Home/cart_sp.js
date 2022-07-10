@@ -15,12 +15,14 @@ export default class Cart_sp extends Component {
         <ul className='cart-w row'>
             <li className='lza col-6 col-md-4 col-xl-3'>
                 <a className='card-3' href='#'>
-                    {/* <img title='xxx' src="https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png" width="100%"/> */}
-                    <LazyImage
-                      srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
-                      src={hoder}
-                      width="100%"
-                    />
+                    <div className='imgz-cart'>
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
+                      <span className='mtn'>Hộp táo đỏ + hộp đường phèn</span>
+                    </div>
                     <h3>Tổ yến ăn liền Fucoidan 16g cộng hòa xã hội chủ nghãi việt anm</h3>
                     <div>
                       <del className='del-cost costz'>570.000 đ</del>
@@ -33,12 +35,14 @@ export default class Cart_sp extends Component {
             </li>
             <li className='lza col-6 col-md-4 col-xl-3'>
                 <a className='card-3' href='#'>
-                    {/* <img title='xxx' src="https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png" width="100%"/> */}
-                    <LazyImage
-                      srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
-                      src={hoder}
-                      width="100%"
-                    />
+                    <div className='imgz-cart'>
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
+                      {/* <span className='mtn'>Hộp táo đỏ + hộp đường phèn</span> */}
+                    </div>
                     <h3>Tổ yến ăn liền Fucoidan 16g cộng hòa xã hội chủ nghãi việt anm</h3>
                     <div>
                       <del className='del-cost costz'>570.000 đ</del>
@@ -51,12 +55,14 @@ export default class Cart_sp extends Component {
             </li>
             <li className='lza col-6 col-md-4 col-xl-3'>
                 <a className='card-3' href='#'>
-                    {/* <img title='xxx' src="https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png" width="100%"/> */}
-                    <LazyImage
-                      srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
-                      src={hoder}
-                      width="100%"
-                    />
+                    <div className='imgz-cart'>
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
+                      {/* <span className='mtn'>Hộp táo đỏ + hộp đường phèn</span> */}
+                    </div>
                     <h3>Tổ yến ăn liền Fucoidan 16g cộng hòa xã hội chủ nghãi việt anm</h3>
                     <div>
                       <del className='del-cost costz'>570.000 đ</del>
@@ -69,12 +75,14 @@ export default class Cart_sp extends Component {
             </li>
             <li className='lza col-6 col-md-4 col-xl-3'>
                 <a className='card-3' href='#'>
-                    {/* <img title='xxx' src="https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png" width="100%"/> */}
-                    <LazyImage
-                      srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
-                      src={hoder}
-                      width="100%"
-                    />
+                    <div className='imgz-cart'>
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
+                      <span className='mtn'>Hộp táo đỏ + hộp đường phèn</span>
+                    </div>
                     <h3>Tổ yến ăn liền Fucoidan 16g cộng hòa xã hội chủ nghãi việt anm</h3>
                     <div>
                       <del className='del-cost costz'>570.000 đ</del>
@@ -87,12 +95,14 @@ export default class Cart_sp extends Component {
             </li>
             <li className='lza col-6 col-md-4 col-xl-3'>
                 <a className='card-3' href='#'>
-                    {/* <img title='xxx' src="https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png" width="100%"/> */}
-                    <LazyImage
-                      srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
-                      src={hoder}
-                      width="100%"
-                    />
+                    <div className='imgz-cart'>
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
+                      <span className='mtn'>Hộp táo đỏ + hộp đường phèn</span>
+                    </div>
                     <h3>Tổ yến ăn liền Fucoidan 16g cộng hòa xã hội chủ nghãi việt anm</h3>
                     <div>
                       <del className='del-cost costz'>570.000 đ</del>
@@ -105,12 +115,14 @@ export default class Cart_sp extends Component {
             </li>
             <li className='lza col-6 col-md-4 col-xl-3'>
                 <a className='card-3' href='#'>
-                    {/* <img title='xxx' src="https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png" width="100%"/> */}
-                    <LazyImage
-                      srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
-                      src={hoder}
-                      width="100%"
-                    />
+                    <div className='imgz-cart'>
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
+                      <span className='mtn'>Hộp táo đỏ + hộp đường phèn</span>
+                    </div>
                     <h3>Tổ yến ăn liền Fucoidan 16g cộng hòa xã hội chủ nghãi việt anm</h3>
                     <div>
                       <del className='del-cost costz'>570.000 đ</del>
@@ -123,12 +135,14 @@ export default class Cart_sp extends Component {
             </li>
             <li className='lza col-6 col-md-4 col-xl-3'>
                 <a className='card-3' href='#'>
-                    {/* <img title='xxx' src="https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png" width="100%"/> */}
-                    <LazyImage
-                      srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
-                      src={hoder}
-                      width="100%"
-                    />
+                    <div className='imgz-cart'>
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
+                      <span className='mtn'>Hộp táo đỏ + hộp đường phèn + giảm giá ưu đãi khi mua yến kèm theo ngủ cốc giá rẻ</span>
+                    </div>
                     <h3>Tổ yến ăn liền Fucoidan 16g cộng hòa xã hội chủ nghãi việt anm</h3>
                     <div>
                       <del className='del-cost costz'>570.000 đ</del>
@@ -139,60 +153,8 @@ export default class Cart_sp extends Component {
                     </div>
                 </a>
             </li>
-            <li className='lza col-6 col-md-4 col-xl-3'>
-                <a className='card-3' href='#'>
-                    {/* <img title='xxx' src="https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png" width="100%"/> */}
-                    <LazyImage
-                      srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
-                      src={hoder}
-                      width="100%"
-                    />
-                    <h3>Tổ yến ăn liền Fucoidan 16g cộng hòa xã hội chủ nghãi việt anm</h3>
-                    <div>
-                      <del className='del-cost costz'>570.000 đ</del>
-                      <ins className='ins-cost costz'>170.000 đ</ins>
-                    </div>
-                    <div className='rating'>
-                      {get_star(5)}
-                    </div>
-                </a>
-            </li>
-            <li className='lza col-6 col-md-4 col-xl-3'>
-                <a className='card-3' href='#'>
-                    {/* <img title='xxx' src="https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png" width="100%"/> */}
-                    <LazyImage
-                      srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
-                      src={hoder}
-                      width="100%"
-                    />
-                    <h3>Tổ yến ăn liền Fucoidan 16g cộng hòa xã hội chủ nghãi việt anm</h3>
-                    <div>
-                      <del className='del-cost costz'>570.000 đ</del>
-                      <ins className='ins-cost costz'>170.000 đ</ins>
-                    </div>
-                    <div className='rating'>
-                      {get_star(5)}
-                    </div>
-                </a>
-            </li>
-            <li className='lza col-6 col-md-4 col-xl-3'>
-                <a className='card-3' href='#'>
-                    {/* <img title='xxx' src="https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png" width="100%"/> */}
-                    <LazyImage
-                      srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
-                      src={hoder}
-                      width="100%"
-                    />
-                    <h3>Tổ yến ăn liền Fucoidan 16g cộng hòa xã hội chủ nghãi việt anm</h3>
-                    <div>
-                      <del className='del-cost costz'>570.000 đ</del>
-                      <ins className='ins-cost costz'>170.000 đ</ins>
-                    </div>
-                    <div className='rating'>
-                      {get_star(5)}
-                    </div>
-                </a>
-            </li>
+
+
        
         </ul>
       </React.Fragment>

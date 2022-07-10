@@ -1,5 +1,5 @@
 .mainz{
-    background-color: linen;
+    background-color: whitesmoke;
 }
 .wrapcontentHome h2{
     font-size: 28px;
@@ -24,6 +24,10 @@
 }
 .wrapcontentHome{
     margin-top: 16px;
+    margin-bottom: 16px;
+}
+.headhome{
+    position: relative;
 }
 .headhome span {
     display: block;
@@ -36,4 +40,7 @@
 }
 .lis-category{
     margin-bottom: 5px;
+}
+.wrap-list{
+    margin-bottom: 16px;
 }

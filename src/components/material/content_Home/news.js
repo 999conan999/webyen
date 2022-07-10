@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './news.css'
-
+import LazyImage from '../../../lib/lazy-image';
+import hoder from '../slide/placeHolder.jpg'
 export default class News extends Component {
   constructor (props) {
     super(props)
@@ -14,7 +15,12 @@ export default class News extends Component {
             <div className='card-3 lkx'>
               <div className='img-news'>
                   <a href="#">
-                      <img src="https://beatdautu.com/wp-content/uploads/2022/07/celcius-network.jpeg" width="100%"/>
+                      {/* <img src="https://nestart.vn/wp-content/uploads/2020/07/22-an-to-yen.jpg" width="100%"/> */}
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
                   </a>
               </div>
               <div className='title-news'>
@@ -28,7 +34,12 @@ export default class News extends Component {
             <div className='card-3 lkx'>
               <div className='img-news'>
                   <a href="#">
-                      <img src="https://beatdautu.com/wp-content/uploads/2022/07/celcius-network.jpeg" width="100%"/>
+                      {/* <img src="https://nestart.vn/wp-content/uploads/2020/07/22-an-to-yen.jpg" width="100%"/> */}
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
                   </a>
               </div>
               <div className='title-news'>
@@ -42,7 +53,12 @@ export default class News extends Component {
             <div className='card-3 lkx'>
               <div className='img-news'>
                   <a href="#">
-                      <img src="https://beatdautu.com/wp-content/uploads/2022/07/celcius-network.jpeg" width="100%"/>
+                      {/* <img src="https://nestart.vn/wp-content/uploads/2020/07/22-an-to-yen.jpg" width="100%"/> */}
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
                   </a>
               </div>
               <div className='title-news'>
@@ -56,7 +72,12 @@ export default class News extends Component {
             <div className='card-3 lkx'>
               <div className='img-news'>
                   <a href="#">
-                      <img src="https://beatdautu.com/wp-content/uploads/2022/07/celcius-network.jpeg" width="100%"/>
+                      {/* <img src="https://nestart.vn/wp-content/uploads/2020/07/22-an-to-yen.jpg" width="100%"/> */}
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
                   </a>
               </div>
               <div className='title-news'>
@@ -70,7 +91,12 @@ export default class News extends Component {
             <div className='card-3 lkx'>
               <div className='img-news'>
                   <a href="#">
-                      <img src="https://beatdautu.com/wp-content/uploads/2022/07/celcius-network.jpeg" width="100%"/>
+                      {/* <img src="https://nestart.vn/wp-content/uploads/2020/07/22-an-to-yen.jpg" width="100%"/> */}
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
                   </a>
               </div>
               <div className='title-news'>
@@ -84,7 +110,12 @@ export default class News extends Component {
             <div className='card-3 lkx'>
               <div className='img-news'>
                   <a href="#">
-                      <img src="https://beatdautu.com/wp-content/uploads/2022/07/celcius-network.jpeg" width="100%"/>
+                      {/* <img src="https://nestart.vn/wp-content/uploads/2020/07/22-an-to-yen.jpg" width="100%"/> */}
+                      <LazyImage
+                        srcset={"https://nestart.vn/wp-content/uploads/2019/11/Platium-Box-To-Yen-An-Lien-Fucoida-324x229.png"}
+                        src={hoder}
+                        width="100%"
+                      />
                   </a>
               </div>
               <div className='title-news'>
