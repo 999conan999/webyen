@@ -1,4 +1,12 @@
-.wrapcontentHome h2{
+.title-cate{
+    font-size: 23px;
+    color: #a81411;
+    text-align: center;
+}
+.title-cate h1{
+    font-size: 23px;
+}
+.headhome{
     font-size: 28px;
     color: #a81411;
     text-align: center;
@@ -7,24 +15,10 @@
     margin-top: 32px;
     -js-display: flex;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
-}
-.wrapcontentHome{
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.headhome{
-    position: relative;
 }
 .headhome span {
     display: block;
@@ -34,10 +28,4 @@
     height: 2px;
     opacity: .2;
     background-color: currentColor;
-}
-.lis-category{
-    margin-bottom: 5px;
-}
-.wrap-list{
-    margin-bottom: 16px;
 }

@@ -1,4 +1,13 @@
 
+.test1{
+  background-color: rgb(184, 179, 179);
+}
+.test2{
+  background-color: rgb(241, 195, 195);
+}
+.test3{
+  background-color: rgb(202, 240, 193);
+}
 *{
   font-weight: 500;
 }
@@ -6,7 +15,10 @@
   .container{
     max-width: 1170px !important;
   }
-  }
+}
+.mainz{
+  background-color: whitesmoke;
+}
 a:hover{
   font-weight:bold;
   color: #f1d800 !important;

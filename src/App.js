@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css'
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import Home_body from './components/body-Home/Home_body';
+import Category_body from './components/body-Category/Category_body';
+// import Home_body from './components/body-Home/Home_body';
 export default class App extends Component {
   constructor (props) {
     super(props)
@@ -13,7 +14,8 @@ export default class App extends Component {
     return (
       <React.Fragment>
            <Header/>
-           <Home_body/>
+           {/* <Home_body/> */}
+           <Category_body/>
            <Footer/>
       </React.Fragment>
     );
