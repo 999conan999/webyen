@@ -115,7 +115,7 @@ export default class Slide extends Component {
                 width="100%"
               />
             </a>
-            <div   dangerouslySetInnerHTML={{__html: e.html}}/>
+            <div dangerouslySetInnerHTML={{__html: e.html}}/>
           </div>
         )
       });

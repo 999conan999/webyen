@@ -22,7 +22,7 @@ export default class Home_body extends Component {
             <div className='wrap-list'>
               <div className='lis-category'>
                 <div className='wraptt'>
-                  <span className='title3z'>Tổ yến dinh dưỡng</span>
+                  <span className='title3z'>Tổ yến dinh dưỡng </span>
                 </div>
                 <div  className='wza'>
                   <Slide type="text-slide"/>

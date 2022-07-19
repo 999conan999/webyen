@@ -1,0 +1,31 @@
+.handle{
+    cursor: grab;
+    position: relative;
+}
+.handle-1 {
+    cursor: pointer;
+}
+.handle-1 img{
+    opacity: 0.5;
+}
+.wrap-img-small .slick-current img{
+    border: solid 1px #d81717;
+    opacity: 1 !important;
+}
+.wrap-img-small .slick-slide{
+    width: auto !important;
+}
+.messz{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  }
+  .nonehtml{
+    text-align: center;
+    color: rgb(253, 253, 253);
+    font-size: 13px;
+    margin-bottom: 0px;
+    padding: 3px;
+    background-color: #a81411;
+    min-height: 45px;
+  }

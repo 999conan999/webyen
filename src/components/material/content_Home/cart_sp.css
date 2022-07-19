@@ -81,12 +81,15 @@ ul.cart-w.row {
 .wza{
     border: 1px solid #f59f83;
     padding: 3px;
-    background-color: #cfc6c63b;
+    /* background-color: #cfc6c63b; */
     padding-bottom: 16px;
 }
 .wza .card-3{
-    background-color: white;
+    background-color: #f2f2f2;
 }
+/* .wza .card-3:hover{
+    border: 1px solid;
+} */
 .imgz-cart{
     position: relative;
 }

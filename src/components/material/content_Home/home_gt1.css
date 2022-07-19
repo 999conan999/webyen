@@ -2,6 +2,11 @@
     font-size: 23px;
     color: #a81411;
     text-align: center;
+    background: white;
+    padding: 5px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid;
 }
 .wrap-gt1 h1{
     font-size: 23px !important;
