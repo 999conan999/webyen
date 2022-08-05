@@ -20,10 +20,10 @@ export default class Category_body extends Component {
           </div>
           <div className='container'>
             <div className='row'>
-               <div className='col-10'>
+               <div className='col-12'>
                  <Card_slide />
                </div>
-               <div className='col-2 test2'>
+               <div className='col-12 test2'>
                 2222
                </div>
             </div>

@@ -1,3 +1,6 @@
+import zalo from './media/zalo.png';
+import facebook from './media/facebook.png';
+import call from './media/call.png';
 export function get_icon(type,color="white",size=16,style={marginRight:"5px",marginBottom:"5px"}){
     switch(type){
         case "volume":
@@ -170,6 +173,15 @@ export function get_icon(type,color="white",size=16,style={marginRight:"5px",mar
               <path id="Path_4901" data-name="Path 4901" d="M763.16,12986.493Z" transform="translate(-6.062 -6.374)" fill="#ffdb31"/>
             </g>
           </svg>
+        break;
+        case "zalo":
+          return zalo;
+        break;
+        case "facebookz":
+          return facebook;
+        break;
+        case "call":
+          return call;
         break;
     }
 }

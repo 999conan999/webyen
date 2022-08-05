@@ -21,7 +21,7 @@ export default class Home_gt1 extends Component {
             </blockquote>
           </div>
           <div className='row'>
-            <div className='col-12 col-sm-6 mgb-8'>
+            <div className='col-12 col-sm-6 mgb-8 bordz'>
               {/* <img width="100%" src="http://quatet.langsonweb.com/wp-content/uploads/2020/12/banner_1.png" alt=""/> */}
               <LazyImage
                 srcset={"http://quatet.langsonweb.com/wp-content/uploads/2020/12/banner_1.png"}
@@ -29,7 +29,7 @@ export default class Home_gt1 extends Component {
                 width="100%"
               />
             </div>
-            <div className='col-12 col-sm-6 mgb-8'>
+            <div className='col-12 col-sm-6 mgb-8 bordz'>
               {/* <img width="100%" src="http://quatet.langsonweb.com/wp-content/uploads/2020/12/banner_2.png" alt=""/> */}
               <LazyImage
                 srcset={"http://quatet.langsonweb.com/wp-content/uploads/2020/12/banner_2.png"}

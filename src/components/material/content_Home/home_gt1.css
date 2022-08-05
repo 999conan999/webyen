@@ -21,3 +21,6 @@
 @media (max-width: 767px){
     
 }
+.bordz img{
+    border: 1px solid #cdcdcd;
+}
